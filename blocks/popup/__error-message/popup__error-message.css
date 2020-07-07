@@ -1,0 +1,11 @@
+@import url(./_hidden/popup__error-message_hidden.css);
+
+.popup__error-message {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF0000;
+  display: block;
+  margin: 4px 0 0 6px;
+  box-sizing: border-box;
+  height: 25px;
+}
