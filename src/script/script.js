@@ -9,7 +9,7 @@ import {UserInfo} from './UserInfo.js';
 
 import '../pages/index.css';
 
-const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'https://praktikum.tk';
+const API_URL = process.env.NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
 const api = new Api({
   baseUrl: '${API_URL}/cohort11',
   headers: {
@@ -108,36 +108,3 @@ api.getInitialCards().then(res => {
 editButton.addEventListener('click', editProfilePopup.open);
 
 addButton.addEventListener('click', newCardPopup.open);
-
-// Добрый день!
-
-// Хороший чистый код!
-
-// ## Итог
-
-// - класс Api реализован согласно поставленной задаче
-// - информация о пользователе  (имя, подпись и аватар) подгружаются с сервера (GET запрос)
-// - имя и о себе можно отредактировать (отправляется PATCH запрос, новые данные)
-// - карточки подгружаются с сервера (GET запрос)
-// - обязательный функционал работает без багов
-// - корректная работа с асинхронным кодом
-// - DOM изменяется только после того, как запрос успешно выполнен
-// - ошибки сервера обрабатываются
-
-// Работа принята
-
-
-// ## Можно лучше
-
-// Большое количество параметров лучше передвать в метод или в конструктор используя деструктуризацию.
-// (собрав аргументы в объект)
-
-// Например в коде:
-// ~~~
-// const newClass = new Class({ windowOne, userForm, popupObj })
-// ~~~
-// А внутри класса:
-// ~~~
-// constructor ({ userForm, popupObj, windowOne }) {...}
-// ~~~
-// И тогда порядок переменных будет неважен, это удобно
