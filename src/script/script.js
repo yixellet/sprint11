@@ -11,7 +11,7 @@ import '../pages/index.css';
 
 const API_URL = process.env.NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
 const api = new Api({
-  baseUrl: '${API_URL}/cohort11',
+  baseUrl: `${API_URL}/cohort11`,
   headers: {
     authorization: 'ae4ba36d-0185-466a-bd72-ffd163f7adae',
     'Content-Type': 'application/json'
