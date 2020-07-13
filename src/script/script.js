@@ -1,7 +1,17 @@
-'use strict';
+import {Api} from './Api.js';
+import {Card} from './Card.js';
+import {CardList} from './CardList.js';
+import {EditProfilePopup} from './EditProfilePopup.js';
+import {FormValidator} from './FormValidator.js';
+import {ImagePopup} from './ImagePopup.js';
+import {NewCardPopup} from './NewCardPopup.js';
+import {UserInfo} from './UserInfo.js';
 
+import '../pages/index.css';
+
+const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'https://praktikum.tk';
 const api = new Api({
-  baseUrl: 'https://praktikum.tk/cohort11',
+  baseUrl: '${API_URL}/cohort11',
   headers: {
     authorization: 'ae4ba36d-0185-466a-bd72-ffd163f7adae',
     'Content-Type': 'application/json'

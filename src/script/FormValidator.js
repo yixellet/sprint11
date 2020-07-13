@@ -1,6 +1,4 @@
-'use strict';
-
-class FormValidator {
+export class FormValidator {
   constructor(form) {
     this.form = form;
     this.submitButton = this.form.elements.submit;

@@ -1,6 +1,4 @@
-'use strict';
-
-class UserInfo {
+export class UserInfo {
   constructor(nameField, jobField, avatarContainer) {
     this.nameField = nameField;
     this.jobField = jobField;

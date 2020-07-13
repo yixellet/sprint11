@@ -1,6 +1,4 @@
-'use strict';
-
-class Card {
+export class Card {
   constructor(popup, id, name, link, removeFromServer, ownerId, userId, likeCount) {
     this.id = id;
     this.name = name;

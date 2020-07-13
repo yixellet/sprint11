@@ -1,6 +1,4 @@
-'use strict';
-
-class Popup {
+export class Popup {
   constructor(popupId) {
     this.popupElement = popupId;
     this.close = this.close.bind(this);

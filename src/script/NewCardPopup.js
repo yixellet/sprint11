@@ -1,6 +1,6 @@
-'use strict';
+import {Popup} from './Popup.js';
 
-class NewCardPopup extends Popup {
+export class NewCardPopup extends Popup {
   constructor(popupId, sendNewCardToServer, cardList, resetErrors, createNewCard) {
     super(popupId);
     this.sendNewCardToServer = sendNewCardToServer;

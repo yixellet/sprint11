@@ -1,6 +1,6 @@
-'use strict';
+import {Popup} from './Popup.js';
 
-class EditProfilePopup extends Popup {
+export class EditProfilePopup extends Popup {
   constructor(popupId, user, resetErrors, sendUserInfoToServer) {
     super(popupId);
     this.user = user;
